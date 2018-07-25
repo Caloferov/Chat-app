@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+        <dialog id="dialog" class="container">
+                <h3>Please provide your username:</h3>
+                <div id="dialogForm">
+                        <input type="text" placeholder="Username" name="Username" id="username" required>
+                        <button class="button" onclick="sendUser();">Send</button>
+                </div>
+        </dialog>
+
+        <div class="container">
+                <h3>Broadcast app</h3>
+                <input type="text" placeholder="Recipient" id="recipient" required>
+                <textarea class="textarea" rows="5" id="message" placeholder="Message"></textarea>
+                <button class="button" onclick="sendMessage();">Send</button>
+                <button class="button" onclick="broadcast();">Broadcast</button>
+        </div>
+
+        <div class="container msg-cont">
+                <h3>Output area</h3>
+                <ul id="messages">
+                </ul>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="http://localhost/socket.io/socket.io.js"></script>
+        <script src="./master.js"></script>
+</body>
+
+</html>
