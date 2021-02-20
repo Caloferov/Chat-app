@@ -1,5 +1,5 @@
 # Broadcast-system
-Chat app with broadcasting functionality made with jquery and websockets (socket.io)
+Experimental chat app with broadcasting functionality made with jquery and websockets (socket.io)
 
 #How to run: 
 Backend:
